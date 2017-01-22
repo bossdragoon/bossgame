@@ -10,6 +10,9 @@
 
 <!--[Custom CSS]-->
 <link rel="stylesheet" href="<?= URL; ?>public/css/pagecss.css" type="text/css"/>
+<link href="<?= URL; ?>public/css/bootstrap-badge-custom.css" rel="stylesheet" type="text/css"/>
+<link href="<?= URL; ?>public/css/bootstrap-glyphicon-custom.css" rel="stylesheet" type="text/css"/>
+<link href="<?= URL; ?>public/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
 <!--[Scripts]-->
 <script src="<?= URL; ?>public/js/jquery-2.1.3.js" type="text/javascript" type="text/javascript"></script>

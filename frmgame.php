@@ -1,26 +1,56 @@
 <div class="container">
     <h1>เกมทายตัวเลข</h1>
 
-    <div class="row">
-        <div class="col-sm-12">
-            <button class="btn btn-lg btn-block btn-warning" id="startBtn" >Start Game</button>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-sm-12">
-            <form class="form form-inline">
-                <div id="guess-input" class="text-center">
-                    <input type="input" name="g1" maxlength="1" class="form-control" />
-                    <input type="input" name="g2" maxlength="1" class="form-control" />
-                    <input type="input" name="g3" maxlength="1" class="form-control" />
-                    <input type="input" name="g4" maxlength="1" class="form-control" />
-                    <button class="btn btn-lg btn-info" >Send</button>
+    <div class="panel">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-10">
+                    <button class="btn btn-lg btn-block btn-warning" id="startBtn" >
+                        <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
+                        <br><span>Start Game</span>
+                    </button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-lg btn-block btn-success" id="restartBtn" name="restartBtn" >
+                        <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+                        <br><span>เล่นใหม่</span>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <form name="frm" class="form">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label" for="show_store_type_id">ประเภท :</label>
+                                    <div class="col-sm-8" >
+                                        <input type="input" name="user-guess" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                    <button class="btn btn-lg btn-block btn-info" id="sendBtn" name="sendBtn" >
+                                        <i class="fa fa-send fa-1x" aria-hidden="true"></i>
+                                        <br><span>Send</span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
-
+            
+            <div id="guess-check">
+                <table class="table">
+                    <thead>
+                    <th>User guess</th>
+                    <th>Guess Result</th>
+                    <th></th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <div id="guess-check">
     </div>
 </div>
