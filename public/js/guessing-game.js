@@ -29,7 +29,7 @@ $(function () {
             digitsGoal += nmbgen;
         }
         cnt = 1;
-        console.log(digitsGoal);
+//        console.log(digitsGoal);
 
         $('#user-guess').focus();
 
@@ -142,6 +142,17 @@ $(function () {
     $('form').on('submit', function () {
         checkGuess();
         return false;
+    });
+
+    //limit number input
+    $('#user-guess').on('keyup', function () {
+        var $this = $(this);
+        var keyLen = $this.val().length,
+            maxLen = $this.attr('maxlength');
+        
+        if (keyLen > maxLen){
+            $this.val($this.val().slice(0, maxLen));
+        }
     });
 
 

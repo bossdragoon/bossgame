@@ -1,5 +1,11 @@
 <div class="container">
-    <h1>เกมทายตัวเลข</h1>
+
+    <div class="panel-heading">
+        <div class="panel-title text-center">
+            <h1 class="title">เกมทายตัวเลข</h1>
+            <hr />
+        </div>
+    </div> 
 
     <div class="panel">
         <div class="panel-body">
@@ -26,21 +32,22 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label" for="show_store_type_id">ประเภท :</label>
                                     <div class="col-sm-8" >
-                                        <input type="input" name="user-guess" id="user-guess" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off"/>
+                                        <input type="number" pattern="[0-9]*" inputmode="numeric" name="user-guess" id="user-guess" min="0" max="9999" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off">
+                                        <!--<input type="input" name="user-guess" id="user-guess" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off"/>-->
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-2">
-                                    <button class="btn btn-lg btn-block btn-info" id="sendBtn" name="sendBtn" >
-                                        <i class="fa fa-send fa-1x" aria-hidden="true"></i>
-                                        <br><span>Send</span>
-                                    </button>
+                                <button class="btn btn-lg btn-block btn-info" id="sendBtn" name="sendBtn" >
+                                    <i class="fa fa-send fa-1x" aria-hidden="true"></i>
+                                    <br><span>Send</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-            
+
             <div id="guess-check">
                 <table class="table">
                     <thead>

@@ -95,3 +95,11 @@ body{
 .text-correct{color:#6ee56e;}
 .text-wrong{color:#ff4136;}
 .text-mid{color:#40b5e3;}
+
+/*Hide number input spin box*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
