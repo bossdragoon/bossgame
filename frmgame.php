@@ -13,7 +13,7 @@
                 <div class="col-sm-2">
                     <button class="btn btn-lg btn-block btn-success" id="restartBtn" name="restartBtn" >
                         <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
-                        <br><span>เล่นใหม่</span>
+                        <br><span>เอาใหม่</span>
                     </button>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label" for="show_store_type_id">ประเภท :</label>
                                     <div class="col-sm-8" >
-                                        <input type="input" name="user-guess" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off"/>
+                                        <input type="input" name="user-guess" id="user-guess" maxlength="4" class="form-control" placeholder="ใส่ตัวเลข 4 ตัว" autocomplete="off"/>
                                     </div>
                                 </div>
                             </div>

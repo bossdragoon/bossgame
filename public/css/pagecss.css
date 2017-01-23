@@ -91,3 +91,7 @@ body{
 .loadingDiv{
     text-align: center;
 }
+
+.text-correct{color:#6ee56e;}
+.text-wrong{color:#ff4136;}
+.text-mid{color:#40b5e3;}
